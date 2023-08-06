@@ -6,17 +6,13 @@ const getMealCatagories = async () =>{
 const mealCatagoriesApiURL ="https://www.themealdb.com/api/json/v1/1/categories.php"
 
 try {
-const response = await fetch(mealCatagoriesApiURL)
-} catch (error) {
-const data = response.json()
-console.log('data: ' , data);
-console.log(error)
-alert('Something went wrong, try again later')
+    const response = await fetch(mealCatagoriesApiURL)
+    const data = response.json()
+    console.log('data: ' , data);
+}   catch (error) {
+    console.log(error)
+    alert('Something went wrong, try again later');
 }
-
-
-
-
 
 }
 
