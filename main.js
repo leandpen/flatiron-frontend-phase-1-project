@@ -4,4 +4,4 @@ const handleFormInputFocus = () => {
 console.log('focus occurred')
 }
 
-document.addEventListener('focus', handleFormInputFocus)
+document.body.addEventListener('focus', handleFormInputFocus)
