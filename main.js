@@ -15,14 +15,22 @@ try {
 }   catch (error) {
     console.log(error)
     alert('Something went wrong, try again later');
-}
+    }
 
-}
+};
 
 // render meal catagories data to dom
 const renderMealCatagories = (mealCatagoriesObj) => {
     console.log('renderMealCatagories');
     console.table('focus ocurred');
+
+    //find and select a dom element to append my data into
+
+   // for each element in our meal catagories array 
+  //create a wrapping element maybe <article> class of card 
+  //append the article,card to DOM 
+  //display the catagory name, image, and description
+  // create h4 element
 };
 
 // funtion to call when form inputs is given focus
