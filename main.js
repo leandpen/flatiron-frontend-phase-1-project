@@ -39,19 +39,25 @@ mealCategoriesArray.forEach(mealCategory =>{
     //append the article,card to selected DOM Element
     //display the catagory name, image, and description
         //image
+        const mealCategoryImg = document.createElement('img')
             // create an img element
             //set img src to catagory thumbail url
             // give class of catagory-thumbail
             //give it a mobile friendly max width of like 300px
             //appendChild the image to our card
         //name
-            //create an h4 element
+        //create an h4 element
+        const mealCategoryName = document.createElement('h4')
             // set h4 element textContent to be meal catagory name
+            mealCategoryName.textContent = mealCategory.name
             //appendChild the h4 to our card
         //description
-            //create an p element
+        //create an p element
+        const mealCategoryDescription = document.createElement('p')
             // set p element textContent to be meal catagory description
+            mealCategoryDescription.textContent = mealCategory.description
             //appendChild the p to our card
+            mealCategoryListItem.appendChild(mealCategoryListItem)
         });
 };
 
