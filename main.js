@@ -29,8 +29,9 @@ const renderMealCatagories = (mealCatagoriesObj) => {
 const handleFormInputFocus = async () => {
     console.log('focus occurred');
 
-    
-await    getMealCatagories();
+    const mealCatagoriesObj =await getMealCatagories();
+    renderMealCatagories('mealCategoriesObj');
 };
 
+//add event listener to search term input
 document.body.addEventListener('focus', handleFormInputFocus);
