@@ -27,16 +27,15 @@ const renderMealCatagories = (mealCatagoriesObj) => {
 //find and select a UL with meal catagory dom element to append my data into
 const mealCatagoriesList =document.body.querySelector('#meal-categories-list')
 
+//for each element in our meal catagories array 
 mealCategoriesArray.forEach(mealCategory =>{
+
+    // create wrapping element maybe <li> class card 
     const mealCategoryListItem = document.createElement('li')
     mealCatagoriesListItem.className = 'meal-category-card'
-    mealCatagoriesList.appendChild
+    //appendChild the li.card to selected DOM Element
+    mealCatagoriesList.appendChild(mealCategoryListItem)
 
-
-});
-
-//for each element in our meal catagories array 
-    //create a wrapping element maybe <li> class of card 
     //append the article,card to selected DOM Element
     //display the catagory name, image, and description
         //image
@@ -53,6 +52,7 @@ mealCategoriesArray.forEach(mealCategory =>{
             //create an p element
             // set p element textContent to be meal catagory description
             //appendChild the p to our card
+        });
 };
 
 // funtion to call when form inputs is given focus
