@@ -39,18 +39,22 @@ mealCategoriesArray.forEach(mealCategory =>{
     //append the article,card to selected DOM Element
     //display the catagory name, image, and description
         //image
+        // create an img element
         const mealCategoryImg = document.createElement('img')
-            // create an img element
             //set img src to catagory thumbail url
-            // give class of catagory-thumbail
+            mealCategoryImg.scr = mealcategory.thumbnail
             //give it a mobile friendly max width of like 300px
+            mealCategoryImg.width = 300
             //appendChild the image to our card
+            mealCategoryListItem.appendChild(mealcategoryName);
         //name
         //create an h4 element
         const mealCategoryName = document.createElement('h4')
             // set h4 element textContent to be meal catagory name
             mealCategoryName.textContent = mealCategory.name
             //appendChild the h4 to our card
+            mealCategoryListItem.appendChild(mealcategoryName);
+
         //description
         //create an p element
         const mealCategoryDescription = document.createElement('p')
