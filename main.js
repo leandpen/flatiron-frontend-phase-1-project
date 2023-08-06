@@ -25,10 +25,18 @@ const renderMealCatagories = (mealCatagoriesObj) => {
     console.table('focus ocurred');
 
 //find and select a UL with meal catagory dom element to append my data into
-//
+const mealCatagoriesList =document.body.querySelector('#meal-categories-list')
+
+mealCategoriesArray.forEach(mealCategory =>{
+    const mealCategoryListItem = document.createElement('li')
+    mealCatagoriesListItem.className = 'meal-category-card'
+    mealCatagoriesList.appendChild
+
+
+});
 
 //for each element in our meal catagories array 
-    //create a wrapping element maybe <article> class of card 
+    //create a wrapping element maybe <li> class of card 
     //append the article,card to selected DOM Element
     //display the catagory name, image, and description
         //image
