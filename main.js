@@ -8,7 +8,8 @@ const mealCatagoriesApiURL ="https://www.themealdb.com/api/json/v1/1/categories.
 try {
     const response = await fetch(mealCatagoriesApiURL)
     const data = response.json()
-    console.log('data: ' , data);
+    const catagories = data.catagories 
+    console.log('catagories: ' , catagories);
 }   catch (error) {
     console.log(error)
     alert('Something went wrong, try again later');
