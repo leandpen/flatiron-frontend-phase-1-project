@@ -36,22 +36,22 @@ mealCategoriesArray.forEach(mealCategory =>{
     //appendChild the li.card to selected DOM Element
     mealCatagoriesList.appendChild(mealCategoryListItem)
 
-    //append the article,card to selected DOM Element
-    //display the catagory name, image, and description
+        //display the catagory name, image, and description
         //image
         // create an img element
         const mealCategoryImg = document.createElement('img')
             //set img src to catagory thumbail url
-            mealCategoryImg.scr = mealcategory.thumbnail
+            mealCategoryImg.scr = mealcategory?.strCategoryThumb
             //give it a mobile friendly max width of like 300px
             mealCategoryImg.width = 300
             //appendChild the image to our card
-            mealCategoryListItem.appendChild(mealcategoryName);
+            mealCategoryListItem.appendChild(mealCategoryImg);
+
         //name
         //create an h4 element
         const mealCategoryName = document.createElement('h4')
             // set h4 element textContent to be meal catagory name
-            mealCategoryName.textContent = mealCategory.name
+            mealCategoryName.textContent = mealCategory?.strCategory;
             //appendChild the h4 to our card
             mealCategoryListItem.appendChild(mealcategoryName);
 
@@ -59,9 +59,9 @@ mealCategoriesArray.forEach(mealCategory =>{
         //create an p element
         const mealCategoryDescription = document.createElement('p')
             // set p element textContent to be meal catagory description
-            mealCategoryDescription.textContent = mealCategory.description
+            mealCategoryDescription.textContent = mealCategory?.strCategoryDescription;
             //appendChild the p to our card
-            mealCategoryListItem.appendChild(mealCategoryListItem)
+            mealCategoryListItem.appendChild(mealCategoryDescription);
         });
 };
 
