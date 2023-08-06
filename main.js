@@ -5,12 +5,15 @@ const searchTermsInputs = document.body.querySelector("#search-terms");
 const getMealCatagories = async () =>{
 const mealCatagoriesApiURL ="https://www.themealdb.com/api/json/v1/1/categories.php"
 
-fetch(mealCatagoriesApiURL)
-}
-const handleFormInputFocus = () => {
-console.log('focus occurred');
+const response = await fetch(mealCatagoriesApiURL)
 
-getMealCategories();
+console.log(response)
+}
+
+const handleFormInputFocus = async () => {
+    console.log('focus occurred');
+
+await    getMealCatagories();
 };
 
 document.body.addEventListener('focus', handleFormInputFocus);
