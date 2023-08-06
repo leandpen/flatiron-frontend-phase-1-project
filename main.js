@@ -30,7 +30,13 @@ const renderMealCatagories = (mealCatagoriesObj) => {
   //create a wrapping element maybe <article> class of card 
   //append the article,card to DOM 
   //display the catagory name, image, and description
-  // create h4 element
+  //image
+  // create an img element
+  //set img src to catagory thumbail url
+  //give it a mobile friendly max width of like 300px
+  //name
+  //create an h4 element
+  // set h4 element textContent to be meal catagory name
 };
 
 // funtion to call when form inputs is given focus
