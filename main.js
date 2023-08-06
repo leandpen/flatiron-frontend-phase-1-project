@@ -7,7 +7,8 @@ const mealCatagoriesApiURL ="https://www.themealdb.com/api/json/v1/1/categories.
 
 const response = await fetch(mealCatagoriesApiURL)
 
-console.log(response)
+const data = response.json()
+//console.log(response)
 }
 
 const handleFormInputFocus = async () => {
