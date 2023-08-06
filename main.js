@@ -26,17 +26,21 @@ const renderMealCatagories = (mealCatagoriesObj) => {
 
     //find and select a dom element to append my data into
 
-   // for each element in our meal catagories array 
+// for each element in our meal catagories array 
   //create a wrapping element maybe <article> class of card 
   //append the article,card to DOM 
   //display the catagory name, image, and description
-  //image
-  // create an img element
-  //set img src to catagory thumbail url
+    //image
+    // create an img element
+     //set img src to catagory thumbail url
+  // give class of catagory-thumbail
   //give it a mobile friendly max width of like 300px
   //name
   //create an h4 element
   // set h4 element textContent to be meal catagory name
+  //description
+  //create an p element
+        // set p element textContent to be meal catagory description
 };
 
 // funtion to call when form inputs is given focus
