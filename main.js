@@ -5,7 +5,7 @@ const searchTermsInputs = document.body.querySelector("#search-terms");
 
 //fetch meal categories data from TheMealBD API
 const getMealCatagories = async () =>{
-    const mealCatagoriesApiURL ="https://www.themealdb.com/api/json/v1/1/categories.php"
+    const mealCatagoriesApiURL ="www.themealdb.com/api/json/v1/1/categories.php"
 
 try {
     const response = await fetch(mealCatagoriesApiURL)
